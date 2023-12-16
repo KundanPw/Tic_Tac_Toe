@@ -27,37 +27,38 @@ document.addEventListener("DOMContentLoaded", () => {
     })
 
     function winningCombo(char) {
-        if(arr[0] == char && arr[1] == char && arr[2]) {
+        let result = document.getElementById("result");
+        if(arr[0] == char && arr[1] == char && arr[2]) { 
             // the 0th row is having the char
-            alert(`${char} wins`);
+            result.textContent = `${char} wins`;
         }
         else if(arr[3] == char && arr[4] == char && arr[5]) {
             // the 1th row is having the char
-            alert(`${char} wins`);
+            result.textContent = `${char} wins`;
         }
         else if(arr[6] == char && arr[7] == char && arr[8]) {
             // the 2th row is having the char
-            alert(`${char} wins`);
+            result.textContent = `${char} wins`;
         }
         else if(arr[0] == char && arr[3] == char && arr[6]) {
             // the 0th col is having the char
-            alert(`${char} wins`);
+            result.textContent = `${char} wins`;
         }
         else if(arr[1] == char && arr[4] == char && arr[7]) {
             // the 1th col is having the char
-            alert(`${char} wins`);
+            result.textContent = `${char} wins`;
         }
         else if(arr[2] == char && arr[5] == char && arr[8]) {
             // the 2th col is having the char
-            alert(`${char} wins`);
+            result.textContent = `${char} wins`;
         }
         else if(arr[0] == char && arr[4] == char && arr[8]) {
             // the 2th digonal is having the char
-            alert(`${char} wins`);
+            result.textContent = `${char} wins`;
         }
         else if(arr[2] == char && arr[4] == char && arr[6]) {
             // the 2th digonal is having the char
-            alert(`${char} wins`);
+            result.textContent = `${char} wins`;
         }
     }
 })
